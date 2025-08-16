@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="cardui_heneralluna" size="1.000000 1.500000" />
+    <ImageTarget name="cardui_gabrielasilang" size="1.000000 1.500000" />
+    <ImageTarget name="cardui_andresbonifacio" size="1.000000 1.500000" />
+    <ImageTarget name="cardui_tandangsora" size="1.000000 1.500000" />
+    <ImageTarget name="cardui_lapulapu" size="1.000000 1.500000" />
+    <ImageTarget name="cardui_joserizal" size="1.000000 1.500000" />
     <ImageTarget name="lapu_lapu_illustration_by_pmgraphix0612_dco97z0-fullview" size="1.000000 1.447266" />
     <ImageTarget name="imagetarget1" size="1.000000 1.333333" />
   </Tracking>

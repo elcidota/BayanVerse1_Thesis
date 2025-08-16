@@ -4,6 +4,8 @@ public class Lapu2AnimationScript : MonoBehaviour
 {
     public Animator lapuLapuAnimator;
 
+    
+
     // Play Attack animation
     public void PlayAttack()
     {

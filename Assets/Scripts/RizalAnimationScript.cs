@@ -4,33 +4,33 @@ public class RizalAnimatorScript : MonoBehaviour
 {
     public Animator rizalAnimator;
 
-    // Play Dance animation
-    public void PlayDance()
+    void Start()
     {
-        rizalAnimator.ResetTrigger("Flip");
-        rizalAnimator.ResetTrigger("Attack");  // Reset any other active triggers
-        rizalAnimator.SetTrigger("Dance");
+        // Make sure Idle animation is the default state when the game starts.
+        if (rizalAnimator != null)
+        {
+            rizalAnimator.Play("Idle");
+        }
     }
 
-    // Play Flip animation
-    public void PlayFlip()
-    {
-        rizalAnimator.ResetTrigger("Dance");
-        rizalAnimator.ResetTrigger("Attack");  // Reset any other active triggers
-        rizalAnimator.SetTrigger("Flip");
-    }
-
-    // Play Attack animation (ensure proper sequence or behavior)
+    // Play Attack animation
     public void PlayAttack()
     {
-        rizalAnimator.ResetTrigger("Dance");
-        rizalAnimator.ResetTrigger("Flip");  // Reset Flip trigger first to avoid conflict
-
-        // Trigger Attack animation
+        // Reset other triggers to avoid conflicts
         rizalAnimator.SetTrigger("Attack");
+    }
 
-        // You can choose to play "Dance" or "Flip" after attack, depending on the behavior
-        // Example: Uncomment this line if you'd like Dance to follow Attack
-        // rizalAnimator.SetTrigger("Dance");
+    // Play Defend animation (Sword and Shield Impact)
+    public void PlayDefend()
+    {
+        // Reset other triggers to avoid conflicts
+        rizalAnimator.SetTrigger("Defend");
+    }
+
+    // Play Tactic animation (Sword Fight One)
+    public void PlayTactic()
+    {
+        // Reset other triggers to avoid conflicts
+        rizalAnimator.SetTrigger("Tactic");
     }
 }
