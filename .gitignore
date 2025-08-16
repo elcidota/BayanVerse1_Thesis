@@ -81,3 +81,6 @@ Thumbs.db
 QCAR/
 *.dat
 *.xml
+
+# Ensure the Packages folder is not ignored
+!Packages/
